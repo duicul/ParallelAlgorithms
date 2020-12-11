@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1607626983 source:d:\pa\gameoflifeopenmp1d\main.cpp
+	<iostream>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<omp.h>
+	<iostream>
+	<fstream>
+	<iostream>
+	<chrono>
+
