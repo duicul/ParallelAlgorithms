@@ -10,3 +10,14 @@
 	<iostream>
 	<chrono>
 
+1609377620 source:d:\parallelalgorithms\gameoflifeconsole\main.cpp
+	<iostream>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<iostream>
+	<chrono>
+

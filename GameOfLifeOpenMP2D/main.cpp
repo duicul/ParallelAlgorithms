@@ -23,6 +23,20 @@ int mov_x[8]={-1,-1,0,1,1,1,0,-1},mov_y[8]={0,-1,-1,-1,0,1,1,1};
 const int init_live_no=18;
 //int init_live[2][init_live_no]={{0,1,2,1,5,6,5,6 ,10,11,12,11,15 ,20,21,22,21,25},{1,0,1,2,1,1,2,2 ,11,10,11,12,11 ,21,20,21,22,21}};
 
+void save_file(){
+        int i,j,col=grid_w,line=grid_h;
+        FILE *fp;
+        fp = fopen("last_State", "w");
+        fprintf(fp, "%d %d \n", col,line);
+        char c;
+        for(i=0;i<line;i++){
+                for(j=0;j<col;j++){
+                    fprintf(fp, "%c",grid_1[i][j]+'0');
+                }
+             fprintf(fp, "\n");
+        }
+    }
+
 int get_random(){
    return rand()%2;
 }
@@ -173,7 +187,7 @@ int main(int argc, char **argv)
         if(durat>0)
             runs[i]=durat;
         else i--;
-    //display_grid(true);
+    display_grid(true);
 }
     cout<<endl;
     display_grid(false);
@@ -188,7 +202,7 @@ int main(int argc, char **argv)
         }
     MyFile<<"Total "<<sum<<" Average "<<(float)sum/steps<<endl;
     MyFile.close();
-
+    save_file();
     return 0;
 
 }

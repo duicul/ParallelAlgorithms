@@ -11,3 +11,15 @@
 	<iostream>
 	<chrono>
 
+1609446381 source:d:\parallelalgorithms\gameoflifeopenmp2d\main.cpp
+	<iostream>
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<omp.h>
+	<iostream>
+	<fstream>
+	<iostream>
+	<chrono>
+

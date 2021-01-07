@@ -1,0 +1,1 @@
+gcc -I"c:\Program Files\MPICH2\include" -L"c:\Program Files\MPICH2\lib" -o main.exe main.cpp -lmpi 
